@@ -19,6 +19,7 @@ from home import views as hv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hv.index),
-    path("projects", include("projects.urls"))
+    path('', hv.index, name="home"),
+    path('contact/', hv.contact, name="contact"),
+    path("projects/", include("projects.urls"))
 ]

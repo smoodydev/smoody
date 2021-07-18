@@ -1,0 +1,65 @@
+nav.navbar{
+    position: absolute;
+    width: 100%;
+}
+
+.wrapper{
+    padding-top: 56px;
+}
+
+.lang-plate{
+    font-size: 12px;
+    padding: 3px;
+    color: white;
+    margin: 1px;
+    font-weight: 700;
+    display: inline-block;
+}
+.html{
+    background-color: orangered;
+}
+.css{
+    background-color: purple;
+}
+.javascript{
+    background-color: darkgoldenrod;
+}
+.python{
+    background-color: #2b5b84;
+}
+
+
+/* Projects */
+.project-card{
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px;
+    background-color: rgb(240,240,240);
+    height: 100%;
+}
+
+/* Form Specific */
+
+.form-field .errorlist{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;
+}
+
+.form-field input, .form-field textarea{
+    border: none;
+    background-color: rgb(225, 225, 225);
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+
+.form-field input:focus, .form-field textarea:focus{
+    background-color: rgb(240, 240, 240);
+
+}
