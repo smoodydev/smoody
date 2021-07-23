@@ -1,6 +1,27 @@
+body{
+    background-color: #A4BAB7;
+}
+
 nav.navbar{
     position: absolute;
     width: 100%;
+}
+nav.bg-light{
+    background-color: #A4BAB7!important;
+}
+
+.lighter{
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lighter > div{
+    background-color: #EFF2C0;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .wrapper{

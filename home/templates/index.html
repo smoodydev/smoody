@@ -1,9 +1,44 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
-Home
+SMoody Home
 {% endblock %}
 {% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div style="padding: 20px; display: flex; align-items: center; justify-content: center;">
+                <div class="image-here"
+                    style="display: flex; align-items: center; justify-content: center;background-color: red; padding: 20px; border-radius: 50%;">
+                    <div class="image-here"
+                        style="background-color: blue; width: 200px; height: 200px; border-radius: 50%;">
+                        <img src="{% static 'images/myAvatar.png' %}" alt="My Avatar"
+                            style="width: 100%; height: 100%; border-radius: 50%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="lighter" style="padding: 20px; display: flex; align-items: center; justify-content: center;">
+                <div>
+                    <h2>Hi There!</h2>
+                    <p>Welcome to SMoody Dev - its both a reference for myself, portfolio and I'd like to think will
+                        contain either some inspiration for coders or maybe something useful to help learn something!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="featured-projects">
+
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-4">
+            {{ project.name }}
+        </div>
+        {% endfor %}
+    </div>
     <div class="row">
         {% for project in projects %}
         <div class="col-4">

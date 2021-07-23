@@ -1,6 +1,6 @@
 from django.db import models
 
-
+# Programming languages attached to projects
 class Language(models.Model):
     name = models.CharField(max_length=254)
     url_safe = models.CharField(max_length=254, blank=True, null=True)
@@ -8,6 +8,7 @@ class Language(models.Model):
         return self.name
 
 
+# What type of project it is - something small or large?
 class Category(models.Model):
     name = models.CharField(max_length=254)
     url_safe = models.CharField(max_length=254, blank=True, null=True)
@@ -15,6 +16,7 @@ class Category(models.Model):
         return self.name
 
 
+# Main Projects Model
 class Project(models.Model):
     categories = models.ManyToManyField('Category', blank=True)
     name = models.CharField(max_length=254)

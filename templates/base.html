@@ -16,6 +16,10 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon-16x16.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon-16x16.png' %}" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
 </head>
 
 <body>
@@ -60,9 +64,9 @@
         {% if messages %}
         <div>
             {% for message in messages %}
-                <div class="{{ message.tags }}">
-                    {{ message }}
-                </div>
+            <div class="{{ message.tags }}">
+                {{ message }}
+            </div>
             {% endfor %}
         </div>
         {% endif %}
