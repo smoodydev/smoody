@@ -1,3 +1,19 @@
+*{
+    color: #131316;
+}
+.flex-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-base{
+    padding: 80px 20px;
+}
+
+.white-bg{
+    background-color: #FBFCEE;
+}
 body{
     background-color: #A4BAB7;
 }
@@ -19,7 +35,7 @@ nav.bg-light{
     justify-content: center;
 }
 .lighter > div{
-    background-color: #EFF2C0;
+    background-color: #FBFCEE;
     border-radius: 10px;
     padding: 20px;
 }
@@ -60,6 +76,24 @@ nav.bg-light{
     background-color: rgb(240,240,240);
     height: 100%;
 }
+.project-tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1);
+    width: 200px;
+    height: 200px;
+    color: #FBFCEE;
+    background-size: contain;
+    font-size: 30px;
+}
+
+.project-tile:hover{
+    filter: grayscale(0);
+    color: #EE6352;
+}
+
+
 
 /* Form Specific */
 

@@ -30,19 +30,26 @@ SMoody Home
         </div>
     </div>
 </div>
-<div id="featured-projects">
+<div id="featured-projects" class="container-fluid container-base white-bg">
 
     <div class="row">
         {% for project in projects %}
-        <div class="col-4">
-            {{ project.name }}
-        </div>
-        {% endfor %}
-    </div>
-    <div class="row">
-        {% for project in projects %}
-        <div class="col-4">
-            {{ project.name }}
+        <div class="col-4 col-md-4">
+            <div class="flex-center">
+                <div class="project-tile project-card"
+                    style="background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %});">
+                    {{ project.name }}
+
+                </div>
+            </div>
+            <div>
+                <p>{{ project.description }}</p>
+            </div>
+            <div>
+                {% for l in project.languages.all %}
+                <div class="lang-plate {{ l|lower }}">{{ l }}</div>
+                {% endfor %}
+            </div>
         </div>
         {% endfor %}
     </div>

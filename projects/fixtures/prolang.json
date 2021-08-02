@@ -1,0 +1,1 @@
+[{"model": "projects.language", "pk": 1, "fields": {"name": "JavaScript", "url_safe": null}}, {"model": "projects.language", "pk": 2, "fields": {"name": "Python", "url_safe": null}}, {"model": "projects.language", "pk": 3, "fields": {"name": "HTML", "url_safe": null}}, {"model": "projects.language", "pk": 4, "fields": {"name": "CSS", "url_safe": null}}]
