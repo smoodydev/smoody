@@ -6,7 +6,7 @@ SMoody Home
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col md6">
             <div style="padding: 20px; display: flex; align-items: center; justify-content: center;">
                 <div class="image-here"
                     style="display: flex; align-items: center; justify-content: center;background-color: red; padding: 20px; border-radius: 50%;">
@@ -18,7 +18,7 @@ SMoody Home
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col md6">
             <div class="lighter" style="padding: 20px; display: flex; align-items: center; justify-content: center;">
                 <div>
                     <h2>Hi There!</h2>
@@ -34,7 +34,7 @@ SMoody Home
 
     <div class="row">
         {% for project in projects %}
-        <div class="col-4 col-md-4">
+        <div class="col md4">
             <div class="flex-center">
                 <div class="project-tile project-card"
                     style="background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %});">
@@ -52,6 +52,24 @@ SMoody Home
             </div>
         </div>
         {% endfor %}
+
+        <div class="col">
+            <div class="flex-center">
+                <div class="project-tile project-card"
+                    style="background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %});">
+                    asdasd
+
+                </div>
+            </div>
+            <div>
+                <p>{{ project.description }}</p>
+            </div>
+            <div>
+                
+                <div class="lang-plate">Css</div>
+                
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

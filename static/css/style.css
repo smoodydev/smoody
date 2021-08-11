@@ -1,6 +1,73 @@
 *{
     color: #131316;
+    
 }
+body{
+    margin: 0;
+}
+
+
+
+
+/* Nav Bar */
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+}
+
+#nav-header{
+    float: left;    
+    font-size: 40px;
+    margin: 10px;
+    height: 40px;
+
+}
+
+#nav-list{
+    list-style: none;
+    float: right;
+    padding: 20px;
+}
+
+#nav-list li {
+    display: inline;
+}
+
+#nav-list > li > a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#nav-toggle{
+    display: none;
+    float: right;
+}
+
+#nav-toggle.show{
+    display: block;
+}
+
+
+nav.sticky{
+    transition: 0.4s;
+    background-color: white;
+}
+
+
+/* Wrapper */
+
+.wrapper{
+    padding-top: 60px;
+    min-height: calc(100vh - 160px);
+}
+
+
+
+/* Rest of Stuff */
 
 .flex-center{
     width: 100%;
@@ -19,13 +86,6 @@ body{
     background-color: #A4BAB7;
 }
 
-nav.navbar{
-    position: absolute;
-    width: 100%;
-}
-nav.bg-light{
-    background-color: #A4BAB7!important;
-}
 
 .lighter{
     text-align: center;
@@ -41,9 +101,7 @@ nav.bg-light{
     padding: 20px;
 }
 
-.wrapper{
-    padding-top: 56px;
-}
+
 
 .lang-plate{
     font-size: 12px;
@@ -75,8 +133,10 @@ nav.bg-light{
     border-top-left-radius: 10px;
     padding: 5px;
     background-color: rgb(240,240,240);
+    margin: 5px;
     height: 100%;
 }
+
 .project-tile{
     display: flex;
     align-items: center;
@@ -119,3 +179,191 @@ nav.bg-light{
     background-color: rgb(240, 240, 240);
 
 }
+
+footer {
+
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    nav{
+        background-color: white;    
+    }
+
+    #nav-toggle {
+        display: block;
+        float: right;
+        padding: 20px;
+    }
+
+    #nav-list{
+        padding-top: 60px;
+        float: unset;
+        display: none;
+    }
+
+    #nav-list li{
+        display: block;
+        text-align: center;
+    }
+
+    #nav-list.show{
+        display: block;
+    }
+    
+}
+
+
+
+/* Smudge Grid System */
+/* 
+.container{
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    /* display: inline-flex; */
+}
+
+.c12 {
+    width: 100%;
+}
+
+.c6 {
+    width: 50%;
+}
+
+.c4 {
+    width: 33.333%;
+}
+
+.c3 {
+    width: 20%;
+}
+
+.c2 {
+    width: 16.666%
+}
+
+.c1{
+    width: 8.3%;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .lg12 {
+        width: 100%;
+    }
+    
+    .lg6 {
+        width: 50%;
+    }
+    
+    .lg4 {
+        width: 33.333%;
+    }
+    
+    .lg3 {
+        width: 20%;
+    }
+    
+    .lg2 {
+        width: 16.666%
+    }
+    
+    .lg1{
+        width: 8.3%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .md12 {
+        width: 100%;
+    }
+    
+    .md6 {
+        width: 50%;
+    }
+    
+    .md4 {
+        width: 33.333%;
+    }
+    
+    .md3 {
+        width: 20%;
+    }
+    
+    .md2 {
+        width: 16.666%
+    }
+    
+    .md1{
+        width: 8.3%;
+    }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .sm12 {
+        width: 100%;
+    }
+    
+    .sm6 {
+        width: 50%;
+    }
+    
+    .sm4 {
+        width: 33.333%;
+    }
+    
+    .sm3 {
+        width: 20%;
+    }
+    
+    .sm2 {
+        width: 16.666%
+    }
+    
+    .sm1{
+        width: 8.3%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .xs12 {
+        width: 100%;
+    }
+    
+    .xs6 {
+        width: 50%;
+    }
+    
+    .xs4 {
+        width: 33.333%;
+    }
+    
+    .xs3 {
+        width: 20%;
+    }
+    
+    .xs2 {
+        width: 16.666%
+    }
+    
+    .xs1{
+        width: 8.3%;
+    }
+} */

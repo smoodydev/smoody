@@ -1,0 +1,184 @@
+/* Smudge Grid System */
+
+.container{
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    width: 100%;
+}
+
+/* Standard */
+.c0{
+    width: 0%;
+}
+.cnone{
+    display: none;
+}
+
+.c12 {
+    width: 100%;
+}
+
+.c6 {
+    width: 50%;
+}
+
+.c4 {
+    width: 33.333%;
+}
+
+.c3 {
+    width: 20%;
+}
+
+.c2 {
+    width: 16.666%
+}
+
+.c1{
+    width: 8.3%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .xs0{
+        width: 0%;
+    }
+    .xsnone{
+        display: none;
+    }
+    .xs12 {
+        width: 100%;
+    }
+    
+    .xs6 {
+        width: 50%;
+    }
+    
+    .xs4 {
+        width: 33.333%;
+    }
+    
+    .xs3 {
+        width: 20%;
+    }
+    
+    .xs2 {
+        width: 16.666%
+    }
+    
+    .xs1{
+        width: 8.3%;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .sm0{
+        width: 0%;
+    }
+    .smnone{
+        display: none;
+    }
+    .sm12 {
+        width: 100%;
+    }
+    
+    .sm6 {
+        width: 50%;
+    }
+    
+    .sm4 {
+        width: 33.333%;
+    }
+    
+    .sm3 {
+        width: 20%;
+    }
+    
+    .sm2 {
+        width: 16.666%
+    }
+    
+    .sm1{
+        width: 8.3%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .md0{
+        width: 0%;
+    }
+    .mdnone{
+        display: none;
+    }
+
+    .md12 {
+        width: 100%;
+    }
+    
+    .md6 {
+        width: 50%;
+    }
+    
+    .md4 {
+        width: 33.333%;
+    }
+    
+    .md3 {
+        width: 20%;
+    }
+    
+    .md2 {
+        width: 16.666%
+    }
+    
+    .md1{
+        width: 8.3%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .lg0{
+        width: 0%;
+    }
+    .lgnone{
+        display: none;
+    }
+    .lg12 {
+        width: 100%;
+    }
+    
+    .lg6 {
+        width: 50%;
+    }
+    
+    .lg4 {
+        width: 33.333%;
+    }
+    
+    .lg3 {
+        width: 20%;
+    }
+    
+    .lg2 {
+        width: 16.666%
+    }
+    
+    .lg1{
+        width: 8.3%;
+    }
+}
+
