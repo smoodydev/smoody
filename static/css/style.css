@@ -80,7 +80,7 @@ nav.sticky{
 }
 
 .white-bg{
-    background-color: #FBFCEE;
+    background-color: white;
 }
 body{
     background-color: #A4BAB7;
@@ -96,7 +96,7 @@ body{
     justify-content: center;
 }
 .lighter > div{
-    background-color: #FBFCEE;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
 }
@@ -134,7 +134,7 @@ body{
     padding: 5px;
     background-color: rgb(240,240,240);
     margin: 5px;
-    height: 100%;
+   
 }
 
 .project-tile{
@@ -217,153 +217,3 @@ footer {
 }
 
 
-
-/* Smudge Grid System */
-/* 
-.container{
-    width: 100%;
-}
-
-.row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col {
-    /* display: inline-flex; */
-}
-
-.c12 {
-    width: 100%;
-}
-
-.c6 {
-    width: 50%;
-}
-
-.c4 {
-    width: 33.333%;
-}
-
-.c3 {
-    width: 20%;
-}
-
-.c2 {
-    width: 16.666%
-}
-
-.c1{
-    width: 8.3%;
-}
-
-
-@media only screen and (min-width: 1200px) {
-    .lg12 {
-        width: 100%;
-    }
-    
-    .lg6 {
-        width: 50%;
-    }
-    
-    .lg4 {
-        width: 33.333%;
-    }
-    
-    .lg3 {
-        width: 20%;
-    }
-    
-    .lg2 {
-        width: 16.666%
-    }
-    
-    .lg1{
-        width: 8.3%;
-    }
-}
-
-
-
-@media only screen and (max-width: 1200px) {
-    .md12 {
-        width: 100%;
-    }
-    
-    .md6 {
-        width: 50%;
-    }
-    
-    .md4 {
-        width: 33.333%;
-    }
-    
-    .md3 {
-        width: 20%;
-    }
-    
-    .md2 {
-        width: 16.666%
-    }
-    
-    .md1{
-        width: 8.3%;
-    }
-}
-
-
-
-@media only screen and (max-width: 992px) {
-    .sm12 {
-        width: 100%;
-    }
-    
-    .sm6 {
-        width: 50%;
-    }
-    
-    .sm4 {
-        width: 33.333%;
-    }
-    
-    .sm3 {
-        width: 20%;
-    }
-    
-    .sm2 {
-        width: 16.666%
-    }
-    
-    .sm1{
-        width: 8.3%;
-    }
-}
-
-
-@media only screen and (max-width: 768px) {
-    .xs12 {
-        width: 100%;
-    }
-    
-    .xs6 {
-        width: 50%;
-    }
-    
-    .xs4 {
-        width: 33.333%;
-    }
-    
-    .xs3 {
-        width: 20%;
-    }
-    
-    .xs2 {
-        width: 16.666%
-    }
-    
-    .xs1{
-        width: 8.3%;
-    }
-} */

@@ -1,8 +1,24 @@
 /* Smudge Grid System */
 
 .container{
-    width: 100%;
+    
+    display: flex;
+    flex-flow: row wrap;
 }
+
+.card-wrap {
+    /* flex: 0 0 33.333%; */
+    display: flex;
+    
+    /* gutter width */
+}
+
+.card {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    flex: 0 0 100%;
+}
+
+
 
 .row {
     width: 100%;

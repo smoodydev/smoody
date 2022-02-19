@@ -27,7 +27,7 @@ class Project(models.Model):
     deployment_link = models.URLField(blank=True)
     other_link = models.URLField(blank=True)
     recommended = models.BooleanField(default=False)
-    image = models.ImageField(null=True, blank=True, upload_to="images")
+    image = models.ImageField(null=True, blank=True, upload_to="images/projects")
 
     def __str__(self):
         return self.name

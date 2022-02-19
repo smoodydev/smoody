@@ -30,46 +30,38 @@ SMoody Home
         </div>
     </div>
 </div>
-<div id="featured-projects" class="container-fluid container-base white-bg">
+<div id="featured-projects" class="container-fluid container-base">
 
-    <div class="row">
+    <div class="container">
         {% for project in projects %}
-        <div class="col md4">
-            <div class="flex-center">
-                <div class="project-tile project-card"
-                    style="background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %});">
-                    {{ project.name }}
 
+        <div class="card-wrap">
+            <div class="project-card">
+                <h5>{{ project.name }}</h5>
+                <p>{{ project.description }}</p>
+                <div
+                    style="margin: 0 auto; width: 200px; height: 200px; background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %}); background-size: contain;">
+                </div>
+                <div>
+                    <a href="{% url 'project' pid=project.id %}">
+                        More Info
+                    </a>
+                </div>
+                <div>{% for l in project.languages.all %}<div class="lang-plate {{ l|lower }}">{{ l }}</div>{% endfor %}
                 </div>
             </div>
-            <div>
-                <p>{{ project.description }}</p>
-            </div>
-            <div>
-                {% for l in project.languages.all %}
-                <div class="lang-plate {{ l|lower }}">{{ l }}</div>
-                {% endfor %}
-            </div>
+
+
         </div>
+
+
         {% endfor %}
 
-        <div class="col">
-            <div class="flex-center">
-                <div class="project-tile project-card"
-                    style="background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %});">
-                    asdasd
 
-                </div>
-            </div>
-            <div>
-                <p>{{ project.description }}</p>
-            </div>
-            <div>
-                
-                <div class="lang-plate">Css</div>
-                
-            </div>
-        </div>
+
+
     </div>
+
 </div>
+
 {% endblock %}
