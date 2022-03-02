@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen Moody - {% block title %}{% endblock %}</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/smudge.css' %}">
@@ -16,9 +18,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {% block pre_js %}
+    {% endblock %}
 
 
- 
 </head>
 
 <body>
@@ -75,7 +78,7 @@
         </div>
     </nav> -->
 
-    
+
 
     <div class="wrapper">
         {% if messages %}
@@ -91,8 +94,34 @@
         {% endblock %}
 
     </div>
-    <footer style="background-color: white; height: 100px;">
-        hello
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="md4">
+                    <h1>SmoodyDev</h1>
+                    <p>Thanks for stopping by!  This Portfolio site is still under some pretty heavy contruction.
+                    </p>
+                    <p>I do hope you come back in a bit to check out the changes made!</p>
+                </div>
+                <div class="md8">
+                    <div class="container">
+                        <h2>Links</h2>
+                    <div class="row">
+                        <div class="md6">
+                            <a href="https://github.com/smoodydev"><p>GitHub</p></a>
+                            <a href="https://www.linkedin.com/in/stephen-moody-07897b5a/"><p>LinkedIn</p></a>
+                        </div>
+                        <div class="md6">
+                            <a href="{% url 'home' %}"><p>Home Page</p></a>
+                            <a href="{% url 'all_projects' %}"><p>Projects</p></a>
+                           <a href="{% url 'contact' %}"><p>Contact</p></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="{% static 'js/script.js' %}"></script>
