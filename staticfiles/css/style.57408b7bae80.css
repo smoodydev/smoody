@@ -1,0 +1,268 @@
+*{
+    color: #131316;
+    
+}
+body{
+    margin: 0;
+}
+
+p, a, ul, ol{
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+/* Nav Bar */
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    color: white;
+}
+
+nav *{
+    color: white;
+}
+
+nav.sticky *{
+    color: black;
+}
+#nav-header{
+    float: left;    
+    font-size: 40px;
+    margin: 10px;
+    height: 40px;
+
+}
+
+#nav-list{
+    list-style: none;
+    float: right;
+    padding: 20px;
+}
+
+#nav-list li {
+    display: inline;
+}
+
+#nav-list > li > a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#nav-toggle{
+    display: none;
+    float: right;
+}
+
+#nav-toggle.show{
+    display: block;
+}
+
+
+nav.sticky{
+    transition: 0.4s;
+    background-color: white;
+}
+
+
+/* Wrapper */
+
+.wrapper{
+    padding-top: 60px;
+    min-height: calc(100vh - 160px);
+}
+
+
+.videocontainer{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: inherit;
+}
+.pos-relative{
+    position: relative;
+}
+.pos-absolute{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.background-video{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+/* Rest of Stuff */
+
+.flex-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-base{
+    padding: 80px 20px;
+}
+
+.white-bg{
+    background-color: white;
+}
+body{
+    background-color: #A4BAB7;
+}
+
+
+.lighter{
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lighter > div{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.lang-plate{
+    font-size: 12px;
+    padding: 3px;
+    color: white;
+    margin: 1px;
+    font-weight: 700;
+    display: inline-block;
+}
+.html{
+    background-color: orangered;
+}
+.css{
+    background-color: purple;
+}
+.javascript{
+    background-color: darkgoldenrod;
+}
+.python{
+    background-color: #2b5b84;
+}
+
+
+/* Projects */
+.project-card{
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px;
+    background-color: rgb(240,240,240);
+    margin: 5px;
+   
+}
+
+.project-tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1);
+    width: 200px;
+    height: 200px;
+    color: #FBFCEE;
+    background-size: contain;
+    font-size: 30px;
+}
+
+.project-tile:hover{
+    filter: grayscale(0);
+    color: #EE6352;
+}
+
+
+
+/* Form Specific */
+
+.form-field .errorlist{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;
+}
+
+.form-field input, .form-field textarea{
+    border: none;
+    background-color: rgb(225, 225, 225);
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+
+.form-field input:focus, .form-field textarea:focus{
+    background-color: rgb(240, 240, 240);
+
+}
+
+footer {
+    background-color: white;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid white;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    nav{
+        background-color: white;    
+    }
+
+    #nav-toggle {
+        display: block;
+        float: right;
+        padding: 20px;
+    }
+
+    #nav-list{
+        padding-top: 60px;
+        float: unset;
+        display: none;
+    }
+
+    #nav-list li{
+        display: block;
+        text-align: center;
+    }
+
+    #nav-list.show{
+        display: block;
+    }
+    
+}
+
+

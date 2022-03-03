@@ -1,1 +1,0 @@
-[{"model": "projects.category", "pk": 1, "fields": {"name": "Big Project", "url_safe": "big-projects"}}, {"model": "projects.category", "pk": 2, "fields": {"name": "Lunch Time Project", "url_safe": "lunch-time-projects"}}, {"model": "projects.category", "pk": 3, "fields": {"name": "Game", "url_safe": "games"}}]
