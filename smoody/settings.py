@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     # additonal nostatic to override django default
-    "whitenoise.runserver_nostatic",
+    
     'django.contrib.staticfiles',
     
     ###  Custom Apps
