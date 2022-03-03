@@ -12,7 +12,7 @@ p, a, ul, ol{
 
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, div{
     font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -175,6 +175,7 @@ body{
     padding: 5px;
     background-color: rgb(240,240,240);
     margin: 5px;
+    width: 100%;
    
 }
 
@@ -213,6 +214,7 @@ body{
     border-bottom-right-radius: 8px;
     border-right: solid black 1px;
     border-bottom: solid black 1px;
+    width: 100%;
 }
 
 
@@ -238,7 +240,7 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
-    nav{
+    nav.sticky{
         background-color: white;    
     }
 
