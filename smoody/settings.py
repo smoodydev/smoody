@@ -92,6 +92,7 @@ if os.path.exists("env.py"):
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
+    print("loading remote")
 else:
 
     DATABASES = {
