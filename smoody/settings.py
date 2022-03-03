@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     # additonal nostatic to override django default
     
-    'django.contrib.staticfiles',
+    "whitenoise.runserver_nostatic",
+    "django.contrib.staticfiles",
     
     ###  Custom Apps
     "home",
@@ -59,7 +60,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
     # Required
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'smoody.urls'
@@ -146,18 +148,16 @@ STATICFILES_DIRS = [
     BASE_DIR / "",
 ]
 
-
-STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+DEFAULT_FROM_EMAIL = 'somewebsite@somewebsite.com'

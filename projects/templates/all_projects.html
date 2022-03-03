@@ -20,6 +20,7 @@ Project Directory
         <div class="project-card">
             <h5>{{ project.name }}</h5>
             <p>{{ project.description }}</p>
+            <img src="{% static 'images/examplecode.jpg' %}" alt="">
             <div
                 style="margin: 0 auto; width: 200px; height: 200px; background-image: url({% if project.image %}{% static project.image %}{% else %}{% static 'images/examplecode.jpg' %}{% endif %}); background-size: contain;">
             </div>
