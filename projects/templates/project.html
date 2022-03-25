@@ -11,8 +11,40 @@
 
 
 {% block content%}
-{{ project }}
-<img src="{% static project.image %}" alt="">
+<div class="container">
+    
+    <div class="row">
+        <div class="c6">
+            <img class="" style="max-width: 100%" src="{% static project.image %}" alt="A Preview of project">
+        </div>
+        <div class="c6">
+            <div class="project-card">
+                <h3>{{ project }}</h3>
+                <p>Category</p>
+                <ul>
+                    {% for c in project.categories.all %}
+                       <li>{{ c }}</li>
+                    {% endfor %}
+                </ul>
+                <p>Languages Used</p>
+                <ul>
+                    {% for l in project.languages.all %}
+                       <li>{{ l }}</li>
+                    {% endfor %}
+                </ul>
+                <p>{{ project.description }}</p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="row">
+        {{ project.fullText }}
+
+    </div>
+</div>
+
+
 {% endblock %}
 
 {% block post_load %}

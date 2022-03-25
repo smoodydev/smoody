@@ -88,6 +88,7 @@ nav.sticky{
 .videocontainer{
     width: 100%;
     height: 50%;
+    max-height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -173,8 +174,8 @@ body{
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 5px;
-    background-color: rgb(240,240,240);
-    margin: 5px;
+    background-color: white;
+    margin: -0px 5px 5px 5px;
     width: 100%;
    
 }
@@ -186,7 +187,7 @@ body{
     filter: grayscale(1);
     width: 200px;
     height: 200px;
-    color: #FBFCEE;
+    color: white;
     background-size: contain;
     font-size: 30px;
 }
@@ -209,7 +210,7 @@ body{
 
 .form-field input, .form-field textarea{
     border: none;
-    background-color: rgb(225, 225, 225);
+    background-color: white;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-right: solid black 1px;
@@ -219,7 +220,7 @@ body{
 
 
 .form-field input:focus, .form-field textarea:focus{
-    background-color: rgb(240, 240, 240);
+    background-color: white;
 
 }
 

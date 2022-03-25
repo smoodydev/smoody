@@ -21,6 +21,7 @@ class Project(models.Model):
     categories = models.ManyToManyField('Category', blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
+    fullText = models.TextField(default="Fill Me In")
     languages = models.ManyToManyField("Language")
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     source_link = models.URLField(blank=True)
